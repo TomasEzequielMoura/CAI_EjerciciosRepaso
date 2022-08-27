@@ -1,0 +1,6 @@
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\EjerciciosRepaso.Ejercicios\bin\Debug\EjerciciosRepaso.Ejercicios.dll
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\EjerciciosRepaso.Ejercicios\bin\Debug\EjerciciosRepaso.Ejercicios.pdb
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\EjerciciosRepaso.Ejercicios\obj\Debug\EjerciciosRepaso.Ejercicios.csproj.CoreCompileInputs.cache
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\EjerciciosRepaso.Ejercicios\obj\Debug\EjerciciosRepaso.Ejercicios.dll
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\EjerciciosRepaso.Ejercicios\obj\Debug\EjerciciosRepaso.Ejercicios.pdb
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\EjerciciosRepaso.Ejercicios\obj\Debug\EjerciciosRepaso.Ejercicios.csprojAssemblyReference.cache

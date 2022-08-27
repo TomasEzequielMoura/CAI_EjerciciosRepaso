@@ -1,0 +1,7 @@
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\ConsoleApp1\obj\Debug\CAI_EjerciciosRepaso.csproj.AssemblyReference.cache
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\ConsoleApp1\obj\Debug\CAI_EjerciciosRepaso.csproj.CoreCompileInputs.cache
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\OneDrive\Escritorio\Tomi\facultad\4TO AÑO\2do cuatri\Construccion de aplicaciones informaticas\Github\CAI_EjerciciosRepaso\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
