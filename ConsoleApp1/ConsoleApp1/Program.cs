@@ -49,20 +49,23 @@ namespace EjerciciosRepaso.Consola
                 Thread.Sleep(2500);
 
             }
-            catch (Exception ex){
-                    Console.WriteLine(ex.Message);
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
 
-            void IngresarNumero(){
-                
+            void IngresarNumero()
+            {
                 string numeroInicio;
                 try
                 {
                     do
                     {
+                        flag = false;
                         Console.WriteLine("Ingrese el numero donde iniciara");
                         numeroInicio = Console.ReadLine();
-                        ValidarNumero(numeroInicio, "Numero", false);
+                        //flag = ValidarNumero(numeroInicio, "Numero", false);
+                        flag = ValidarDecimal(numeroInicio); 
 
                     } while (flag == false);
 
@@ -81,6 +84,20 @@ namespace EjerciciosRepaso.Consola
                     // ejercicio 7
                     //EjerciciosRepaso.Ejercicios.Ejercicio7.MayorMedianoMenor(Convert.ToInt32(numeroInicio));
 
+                    //ejercicio 13
+                    //EjerciciosRepaso.Ejercicios.Ejercicio13.Factorial(Convert.ToInt32(numeroInicio));
+
+                    //ejercicio 14
+                    //EjerciciosRepaso.Ejercicios.Ejercicio14.TablaMultiplicar(Convert.ToInt32(numeroInicio));
+
+                    //ejercicio 16
+                    //EjerciciosRepaso.Ejercicios.Ejercicio16.ContarDigitos(Convert.ToInt32(numeroInicio));
+
+                    //ejercicio 18
+                    //EjerciciosRepaso.Ejercicios.Ejercicio18.BinarioOctaHexa(Convert.ToDecimal(numeroInicio));
+
+                    //ejercicio 20
+                    EjerciciosRepaso.Ejercicios.Ejercicio20.PrimoFactorial(Convert.ToInt32(numeroInicio));
                 }
                 catch (Exception ex)
                 {
@@ -88,8 +105,8 @@ namespace EjerciciosRepaso.Consola
                 }
             }
 
-            void IngresarPalabra() {
-
+            void IngresarPalabra()
+            {
                 //Ejercicios 3 y 4 
                 //ElegirPalindromoAngrama();
 
@@ -97,9 +114,22 @@ namespace EjerciciosRepaso.Consola
                 //HolaUsuario();
 
                 //Ejercicios 10
-                EjerciciosRepaso.Ejercicios.Ejercicio10.AnalizarLetra();
+                //EjerciciosRepaso.Ejercicios.Ejercicio10.AnalizarLetra();
 
-                void HolaUsuario() {
+                //Ejercicios 11 - TODO
+                //EjerciciosRepaso.Ejercicios.Ejercicio11.AnalizarPalabra();
+
+                //Ejercicios 15
+                //EjerciciosRepaso.Ejercicios.Ejercicio15.AnalizarContrasenia();
+
+                //ejercicio 17
+                //EjerciciosRepaso.Ejercicios.Ejercicio17.SueldoYAcomodar();
+
+                //ejercicio 19
+                EjerciciosRepaso.Ejercicios.Ejercicio19.LongitudPalabras();
+
+                void HolaUsuario()
+                {
                     string palabra;
                     Console.WriteLine("Ingrese la palabra:");
                     palabra = Console.ReadLine();
@@ -135,9 +165,9 @@ namespace EjerciciosRepaso.Consola
                         Angrama();
                     }
                 }
-                
 
-                void Palindromo() {
+                void Palindromo()
+                {
                     string palabra;
                     Console.WriteLine("Ingrese la palabra:");
                     palabra = Console.ReadLine();
@@ -154,7 +184,8 @@ namespace EjerciciosRepaso.Consola
                     }
                 }
 
-                void Angrama() {
+                void Angrama()
+                {
                     string palabra1;
                     string palabra2;
 
@@ -175,7 +206,67 @@ namespace EjerciciosRepaso.Consola
                 }
             }
 
-            void IngresarFecha() {
+            bool ValidarNumero(string numero, string campo, bool esElegirFuncion)
+            {
+                int numeroInt = 0;
+
+                if (!int.TryParse(numero, out numeroInt))
+                {
+                    Console.WriteLine("Numero invalida, debe ser un numero entero");
+                }
+                else if (numeroInt < 1)
+                {
+                    Console.WriteLine("El número debe ser mayor a 1");
+                }
+                else if (esElegirFuncion && numeroInt != 1 && numeroInt != 2 && numeroInt != 3)
+                {
+                    Console.WriteLine("El número debe ser 1, 2 o 3");
+                }
+                else
+                {
+                    flag = true;
+                    Console.WriteLine("Numero valido.");
+                }
+                return flag;
+            }
+
+            bool ValidarDecimal(string numero)
+            {
+                decimal numeroDecimal = 0;
+
+                if (!decimal.TryParse(numero, out numeroDecimal))
+                {
+                    Console.WriteLine("Numero invalida, debe ser un numero entero");
+                }
+                else if (numeroDecimal < 1)
+                {
+                    Console.WriteLine("El número debe ser mayor a 1");
+                }
+                else
+                {
+                    flag = true;
+                    Console.WriteLine("Numero valido.");
+                }
+                return flag;
+            }
+
+            void IngresarFecha()
+            {
+
+                // ejercicio 8
+                //string fecha;
+                //fecha = IngresarFechaSeparado();
+                //EjerciciosRepaso.Ejercicios.Ejercicio8.DiferenciaFechas(fecha);
+
+                //Ejercicios 12
+                //string fecha1;
+                //string fecha2;
+                //(fecha1, fecha2) = IngresarDosFechas();
+                //EjerciciosRepaso.Ejercicios.Ejercicio12.DiferenciaEntreDosFechas(fecha1, fecha2);
+            }
+
+            DateTime IngresarFechaSeparado()
+            {
                 string dia;
                 string mes;
                 string anio;
@@ -212,33 +303,50 @@ namespace EjerciciosRepaso.Consola
 
                 DateTime fechaArmada = DateTime.Parse(fecha);
 
-                // ejercicio 8
-                EjerciciosRepaso.Ejercicios.Ejercicio8.DiferenciaFechas(fechaArmada);
+                return fechaArmada;
             }
 
-            bool ValidarNumero(string numero, string campo, bool esElegirFuncion)
+            (string, string) IngresarDosFechas()
             {
-                int numeroInt = 0;
+                string fecha1;
+                string fecha2;
 
-                if (!int.TryParse(numero, out numeroInt))
+                do
                 {
-                    Console.WriteLine("Numero invalida, debe ser un numero entero");
-                }
-                else if (numeroInt < 1)
+                    Console.WriteLine("Ingrese la primera fecha");
+                    fecha1 = Console.ReadLine();
+                    ValidarFecha(fecha1);
+
+                } while (flag == false);
+
+                do
                 {
-                    Console.WriteLine("El número debe ser mayor a 1");
-                }
-                else if (esElegirFuncion && numeroInt != 1 && numeroInt != 2 && numeroInt != 3)
+                    Console.WriteLine("Ingrese la segunda fecha");
+                    fecha2 = Console.ReadLine();
+                    ValidarFecha(fecha2);
+
+                } while (flag == false);
+
+                return (fecha1, fecha2);
+            }
+
+            bool ValidarFecha(string fecha)
+            {
+                DateTime fechaCorreccta;    
+                flag = false;
+
+                if (!DateTime.TryParse(fecha, out fechaCorreccta))
                 {
-                    Console.WriteLine("El número debe ser 1, 2 o 3");
+                    Console.WriteLine("Fecha invalida, debe ser un fecha real");
                 }
                 else
                 {
                     flag = true;
                     Console.WriteLine("Numero valido.");
                 }
+
                 return flag;
             }
-        }        
+        }
     }
 }
